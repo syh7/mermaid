@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/diagrams/globalStyles.ts"],
+  "sourcesContent": ["export const getIconStyles = () => `\r\n  /* Font Awesome icon styling - consolidated */\r\n  .label-icon {\r\n    display: inline-block;\r\n    height: 1em;\r\n    overflow: visible;\r\n    vertical-align: -0.125em;\r\n  }\r\n  \r\n  .node .label-icon path {\r\n    fill: currentColor;\r\n    stroke: revert;\r\n    stroke-width: revert;\r\n  }\r\n`;\r\n"],
+  "mappings": "yCAAO,IAAMA,EAAgBC,EAAA,IAAM;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,EAAN",
+  "names": ["getIconStyles", "__name"]
+}

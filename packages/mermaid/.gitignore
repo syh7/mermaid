@@ -4,3 +4,7 @@ README.*
 src/docs/public/user-avatars/
 src/docs/.vitepress/cache
 src/docs/.vitepress/components.d.ts
+
+# add minimised library to git for use in bookstack
+!dist/mermaid.esm.min.mjs
+!dist/chunks/mermaid.esm.min

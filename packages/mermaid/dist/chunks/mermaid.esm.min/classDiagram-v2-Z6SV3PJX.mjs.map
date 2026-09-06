@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/diagrams/class/classDiagram-v2.ts"],
+  "sourcesContent": ["import type { DiagramDefinition } from '../../diagram-api/types.js';\r\n// @ts-ignore: JISON doesn't support types\r\nimport parser from './parser/classDiagram.jison';\r\nimport { ClassDB } from './classDb.js';\r\nimport styles from './styles.js';\r\nimport renderer from './classRenderer-v3-unified.js';\r\n\r\nexport const diagram: DiagramDefinition = {\r\n  parser,\r\n  get db() {\r\n    return new ClassDB();\r\n  },\r\n  renderer,\r\n  styles,\r\n  init: (cnf) => {\r\n    if (!cnf.class) {\r\n      cnf.class = {};\r\n    }\r\n    cnf.class.arrowMarkerAbsolute = cnf.arrowMarkerAbsolute;\r\n  },\r\n};\r\n"],
+  "mappings": "4mBAOO,IAAMA,EAA6B,CACxC,OAAAC,EACA,IAAI,IAAK,CACP,OAAO,IAAIC,CACb,EACA,SAAAC,EACA,OAAAC,EACA,KAAMC,EAACC,GAAQ,CACRA,EAAI,QACPA,EAAI,MAAQ,CAAC,GAEfA,EAAI,MAAM,oBAAsBA,EAAI,mBACtC,EALM,OAMR",
+  "names": ["diagram", "classDiagram_default", "ClassDB", "classRenderer_v3_unified_default", "styles_default", "__name", "cnf"]
+}
