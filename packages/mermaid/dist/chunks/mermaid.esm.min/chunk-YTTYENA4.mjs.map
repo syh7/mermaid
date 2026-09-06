@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/rendering-util/insertElementsForSize.js"],
-  "sourcesContent": ["import { select } from 'd3';\r\n\r\nexport const getDiagramElement = (id, securityLevel) => {\r\n  let sandboxElement;\r\n  if (securityLevel === 'sandbox') {\r\n    sandboxElement = select('#i' + id);\r\n  }\r\n  const root =\r\n    securityLevel === 'sandbox'\r\n      ? select(sandboxElement.nodes()[0].contentDocument.body)\r\n      : select('body');\r\n\r\n  const svg = root.select(`[id=\"${id}\"]`);\r\n\r\n  // Run the renderer. This is what draws the final graph.\r\n\r\n  return svg;\r\n};\r\n"],
-  "mappings": "kFAEO,IAAMA,EAAoBC,EAAA,CAACC,EAAIC,IAAkB,CACtD,IAAIC,EACJ,OAAID,IAAkB,YACpBC,EAAiBC,EAAO,KAAOH,CAAE,IAGjCC,IAAkB,UACdE,EAAOD,EAAe,MAAM,EAAE,CAAC,EAAE,gBAAgB,IAAI,EACrDC,EAAO,MAAM,GAEF,OAAO,QAAQH,CAAE,IAAI,CAKxC,EAfiC",
-  "names": ["getDiagramElement", "__name", "id", "securityLevel", "sandboxElement", "select_default"]
-}
