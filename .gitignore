@@ -1,6 +1,3 @@
-# add dist for bookstack use
-!packages/tiny/dist/mermaid.tiny.js
-
 .DS_Store
 
 node_modules/
