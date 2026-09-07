@@ -35,7 +35,7 @@ const buildPackage = async (entryName: keyof typeof packageOptions) => {
       // mermaid.js
       { ...iifeOptions },
       // mermaid.min.js
-      { ...iifeOptions, minify: true, metafile: shouldVisualize },
+      { ...iifeOptions, minify: true, metafile: shouldVisualize, charset: 'ascii' },
       // mermaid.tiny.min.js
       {
         ...iifeOptions,
